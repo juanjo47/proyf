@@ -1,0 +1,17 @@
+{
+    "persona":[
+        {
+            "id": 1,
+            "nombre": "Carlos Bustamante",
+            "direccion": "Av. libertador 222"
+        }
+    ],
+    "telefono": [
+        {
+            "id": 1,
+            "numero": 7584857,
+            "descripcion": "casa",
+            "PersonaId": 1
+        }
+    ]
+}
