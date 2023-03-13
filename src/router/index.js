@@ -24,6 +24,11 @@ const routes = [
     path: '/persona',
     name: 'persona',
     component: () => import('../views/PersonaView.vue')
+  },
+  {
+    path: '/persona/:id/editar',
+    name: 'persona_editar',
+    component: () => import('../views/PersonaEditarView.vue')
   }
 ]
 

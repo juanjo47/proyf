@@ -1,17 +1,27 @@
 {
-    "persona":[
-        {
-            "id": 1,
-            "nombre": "Carlos Bustamante",
-            "direccion": "Av. libertador 222"
-        }
-    ],
-    "telefono": [
-        {
-            "id": 1,
-            "numero": 7584857,
-            "descripcion": "casa",
-            "PersonaId": 1
-        }
-    ]
+  "persona": [
+    {
+      "id": 1,
+      "nombre": "Carlos Bustamante",
+      "direccion": "Av. libertador 222"
+    },
+    {
+      "nombre": "pedro alcazar",
+      "direccion": "calle jaen 352",
+      "id": 2
+    },
+    {
+      "nombre": "Maria salazar",
+      "direccion": "final pedro salazar",
+      "id": 3
+    }
+  ],
+  "telefono": [
+    {
+      "id": 1,
+      "numero": 7584857,
+      "descripcion": "casa",
+      "PersonaId": 1
+    }
+  ]
 }
