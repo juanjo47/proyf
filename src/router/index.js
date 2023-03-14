@@ -29,7 +29,27 @@ const routes = [
     path: '/persona/:id/editar',
     name: 'persona_editar',
     component: () => import('../views/PersonaEditarView.vue')
-  }
+  },
+  {
+    path: '/categoria',
+    name: 'categoria',
+    component: () => import('../views/CategoriaView.vue')
+  },
+  {
+    path: '/categoria/:id/editar',
+    name: 'categoria_editar',
+    component: () => import('../views/CategoriaEditarView.vue')
+  },
+  {
+    path: '/producto',
+    name: 'producto',
+    component: () => import('../views/ProductoView.vue')
+  },
+  {
+    path: '/producto/:id/editar',
+    name: 'producto_editar',
+    component: () => import('../views/ProductoEditarView.vue')
+  },
 ]
 
 const router = createRouter({

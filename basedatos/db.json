@@ -2,7 +2,7 @@
   "persona": [
     {
       "id": 1,
-      "nombre": "Carlos Bustamante",
+      "nombre": "Carlos Bustamantes",
       "direccion": "Av. libertador 222"
     },
     {
@@ -16,12 +16,50 @@
       "id": 3
     }
   ],
-  "telefono": [
+  "categoria": [
     {
       "id": 1,
-      "numero": 7584857,
-      "descripcion": "casa",
-      "PersonaId": 1
+      "nombre": "Ropa",
+      "almacen": "Mercado",
+      "codigo": "Rp"
+    },
+    {
+      "id": 2,
+      "nombre": "Muebles",
+      "almacen": "Almacen-el alto",
+      "codigo": "Mb"
+    },
+    {
+      "nombre": "Vajilla",
+      "almacen": "sotano landaeta",
+      "codigo": "Vj",
+      "id": 3
+    }
+  ],
+  "producto": [
+    {
+      "id": 1,
+      "nombre": "blusas",
+      "descripcion": "blusa de poliester en colores blanco y azul",
+      "cantidad": 22,
+      "idc": 1,
+      "codigo": "Rp-b1"
+    },
+    {
+      "id": 2,
+      "nombre": "jean",
+      "descripcion": "pantalon de tela jean de color azul",
+      "cantidad": 15,
+      "idc": 1,
+      "codigo": "Rp-pj1"
+    },
+    {
+      "nombre": "Mesa",
+      "descripcion": "mesa de madera roble para ",
+      "cantidad": "5",
+      "idc": "2",
+      "codigo": "Mb-ms1",
+      "id": 3
     }
   ]
 }

@@ -2,8 +2,10 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/nueva">Nueva</router-link> |
-    <router-link to="/persona">Persona</router-link> |
+    <!-- <router-link to="/nueva">Nueva</router-link> |
+    <router-link to="/persona">Persona</router-link> | -->
+    <router-link to="/categoria">Categoria</router-link> |
+    <router-link to="/producto">Producto</router-link> |
   </nav>
   <router-view/>
 </template>
