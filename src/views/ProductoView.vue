@@ -28,7 +28,8 @@
                     <td>{{ value.nombre }}</td>
                     <td>{{ value.descripcion }}</td>
                     <td>{{ value.cantidad }}</td>
-                    <td v-on="getCatego(value.idc)">{{ value.categoria }}</td>
+                    //<td v-on="getCatego(value.idc)">{{ value.categoria }}</td>
+                    <td>{{ value.idc }}</td>
                     <td>{{ value.codigo }}</td>
                     <td><button type="button" class="btn btn-primary" @click="editar(value)">Editar</button></td>
                     <td><button type="button" class="btn btn-danger" @click="eliminar(value)">Eliminar</button></td>
