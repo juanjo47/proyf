@@ -1,7 +1,6 @@
 <template>
-    <div style="text-aling:left">
-        <b>Editar Producto</b>
-        <form @submit.prevent="editar()" action="">
+    <div>
+        <form @submit.prevent="crearProducto()">
             <div style="margin-top: 5mm;">
                 <input type="text" v-model="payload.nombre" placeholder="Nombre">
             </div>
@@ -18,20 +17,20 @@
                 <input type="text" v-model="payload.codigo" placeholder="Codigo">
             </div>
             <div style="margin-top: 5mm;">
-                <button class="btn btn-info">Confirmar Editado</button>
+                <button type="submit" class="btn btn-primary">Agregar</button>
             </div>
+            
         </form>
-    </div>
+    </div>    
 </template>
 
 <script>
-    export default{
-        name: 'ProductoEditarView',
-        props:[],
-        emits:[],
+    export default {
+        name: 'FormProductoNuevo',
+        props: ["inpayload"],
+        emits:("on-payload"),
         data(){
             return{
-                productoId:0,
                 payload:{
                     nombre:"",
                     descripcion:"",
@@ -39,36 +38,24 @@
                     idc: 0,
                     codigo:""
                 }
-                }
+            }
         },
         methods:{
-            load(){
-                this.productoId = this.$route.params.id 
-            },
-            getProducto(){
+            crearProducto(){
+                this.$emit('on-payload', this.payload);
 
-                this.axios.get("http://localhost:5000/producto/"+this.productoId)
-                .then((response) => {this.payload = response.data})
-                .catch((err) => (console.log(err)))
-            },
-            editar(){
-                this.axios.patch("http://localhost:5000/producto/"+this.productoId,this.payload)
-                .then((response) => {console.log(response)})
-                .catch((err) => {console.log(err)})
             }
-            
         },
-        computed: {           
+        computed:{
         },
         mounted(){
-            this.load(),
-            this.getProducto()
+            this.payload = this.inpayload;
+        },
+        components:{
         }
-        
     }
 </script>
 
 <style lang="scss">
-
 
 </style>

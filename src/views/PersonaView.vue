@@ -2,10 +2,17 @@
     <div style="text-aling:left">
         lista de personas
         <form @submit.prevent="crearPersona()">
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
             <input type="text" v-model="payload.nombre" placeholder="Nombre">
             <input type="text" v-model="payload.direccion" placeholder="Direccion">
             <button type="submit" class="btn btn-primary">Agregar</button>
         </form>
+        <!-- <input type="search" class="form-control"> -->
         <table class="table">
             <thead>
                 <tr>

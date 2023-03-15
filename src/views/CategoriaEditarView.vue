@@ -15,10 +15,17 @@
                 <button class="btn btn-info">Confirma Editado</button>
             </div>
         </form>
+        <!-- <div style="margin-top: 10mm;">
+            <FormCategoriaNueva 
+            v-if="isload"
+            :inpayload="payload" @on-payload="editar($event)">
+            </FormCategoriaNueva>
+        </div> -->
     </div>
 </template>
 
 <script>
+    //import FormCategoriaNueva  from "../components/FormCategoriaNueva.vue";
     export default{
         name: 'CategoriaEditarView',
         props:[],
@@ -26,6 +33,7 @@
         data(){
             return{
                 categoriaId:0,
+                //isload:false,
                 payload:{
                     nombre:"",
                     almacen:"",
@@ -40,7 +48,7 @@
             getCategoria(){
 
                 this.axios.get("http://localhost:5000/categoria/"+this.categoriaId)
-                .then((response) => {this.payload = response.data})
+                .then((response) => {this.payload = response.data, this.isload = true})
                 .catch((err) => (console.log(err)))
             },
             editar(){
@@ -55,6 +63,9 @@
         mounted(){
             this.load(),
             this.getCategoria()
+        },
+        components:{
+            //FormCategoriaNueva
         }
         
     }

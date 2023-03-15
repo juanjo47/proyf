@@ -34,6 +34,12 @@
       "almacen": "sotano landaeta",
       "codigo": "Vj",
       "id": 3
+    },
+    {
+      "nombre": "electornicos",
+      "almacen": "Varios",
+      "codigo": "ELT",
+      "id": 4
     }
   ],
   "producto": [
